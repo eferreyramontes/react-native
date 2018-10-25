@@ -88,3 +88,6 @@ Elements:
 # Class 10 - React Native Styles
 
 Activate Hot Reload
+
+# Class 11 - Project Organization
+
