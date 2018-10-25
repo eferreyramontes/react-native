@@ -39,12 +39,17 @@ export default class App extends Component<Props> {
   }
 }
 
+const color = Platform.select({
+  ios: 'green',
+  android: 'black',
+});
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: color,
   },
   welcome: {
     fontSize: 20,

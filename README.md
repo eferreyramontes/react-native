@@ -1,7 +1,7 @@
 React Native
 ============
 
-#Components
+# Components
 
 * View / ScrollView / SafeAreaView
 * Text / TextView
@@ -13,7 +13,7 @@ React Native
 * Platform 
 * AsyncStorage
 
-#¿Cuándo usar React-Native?
+# ¿Cuándo usar React-Native?
 
 * Native ---> RCT Bridge ---> Javascript Core
 * Hot/live reloadign: Aligera los tiempos de desarrollos
@@ -26,7 +26,7 @@ React Native
 
 La aplicación se va a llamar Platzi-Video. Es una página offline :D (contenido y listas).
 
-##Seteo del entorno
+## Seteo del entorno
 
 ```bash
 $ brew install node
@@ -34,7 +34,7 @@ $ brew install watchman
 $ npm install -g react-native-cli
 ```
 
-###Entorno para Android
+### Entorno para Android
 
 Java Development Kit: `http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
 
@@ -58,7 +58,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-###Entorno para iOS
+### Entorno para iOS
 
 XCode: `https://itunes.apple.com/us/app/xcode/id497799835?mt=12`.
 
@@ -84,3 +84,7 @@ Elements:
 * View
 * Text
 * Image
+
+# Class 10 - React Native Styles
+
+Activate Hot Reload
