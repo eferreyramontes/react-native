@@ -12,12 +12,13 @@ import {
   StyleSheet, 
   Text, 
   View,
-  Image,
+  Image
   } from 'react-native';
 
 
 import Home from './src/screens/containers/home';
-import Header from './src/sections/components/headers'
+import Header from './src/sections/components/header'
+import SuggestionList from './src/videos/containers/suggestion-list'
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -30,7 +31,7 @@ export default class App extends Component<Props> {
         <Text>header</Text>
         <Text>search</Text>
         <Text>categories</Text>
-        <Text>sugerencias</Text>
+        <SuggestionList/>
       </Home>
     );
   }
