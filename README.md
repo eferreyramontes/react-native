@@ -89,5 +89,5 @@ Elements:
 
 Activate Hot Reload
 
-# Class 11 - Project Organization
+# Class 11 - iPhone X Support: Header creation
 
