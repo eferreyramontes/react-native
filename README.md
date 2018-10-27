@@ -95,4 +95,6 @@ Activate Hot Reload
 
 # Class 13 - Recommendations structure
 
-# Class 14 - Emtpy lists and separators
+# Class 14 - Empty lists and separators
+
+# Class 15 - Suggestions component

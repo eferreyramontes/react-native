@@ -7,21 +7,28 @@ import {
 import Layout from '../components/suggestion-list-layout';
 import Empty from '../components/empty';
 import Separator from '../components/separator';
+import Suggestion from '../components/suggestion';
 
 class SuggestionList extends Component {
     renderEmpty = () => <Empty text="There are no suggestions for you :("/>
-
     listSeparator = () => <Separator color="red"/>
+    renderItem = (item) => {
+        return (
+            <Suggestion {...item}/>
+        );
+    }
 
     render() {
         const list = [
             {
                 title: 'Avengers',
-                key: '1'
+                key: '1',
+                year: 2010
             },
             {
-                title: 'nuel',
-                key: '2'
+                title: 'Avengers 2',
+                key: '2',
+                year: 2012
             }
         ]
         return (
@@ -30,9 +37,7 @@ class SuggestionList extends Component {
                     data={list}
                     ItemSeparatorComponent={this.listSeparator}
                     ListEmptyComponent={this.renderEmpty}
-                    renderItem={({item}) =>
-                    <Text>{item.title}</Text>
-                }
+                    renderItem={this.renderItem}
                 />
             </Layout>
         )
