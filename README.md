@@ -94,3 +94,5 @@ Activate Hot Reload
 # Class 12 - React Native Lists
 
 # Class 13 - Recommendations structure
+
+# Class 14 - Emtpy lists and separators
