@@ -98,3 +98,30 @@ Activate Hot Reload
 # Class 14 - Empty lists and separators
 
 # Class 15 - Suggestions component
+
+# Class 16 - API calls - Fetch
+
+We are going to use this mock server for testing purposes: `https://www.yts.ag/`.
+
+To take a look to what we are debugging, we will use the Android Remote JS Debugging that must be enabled in the emulator pressing <COMMAND> + M and then selecting the option *Debug JS Remotely*.
+
+To make it work, first I needed to define the debugging url as follows;
+
+1. Get into Dev menu CMD+M o CTRL+M
+2. Go into *Dev Settings*.
+3. Go to *Debugging* in *Debug Server Host & Port for Device*.
+4. Write `localhost:8081`.
+5. Go to your favorite browser and write `localhost:8081/debugger-ui`.
+
+## Extra steps!! :@
+
+If you really want to make it work, then you will need to accomplish the following steps;
+```bash
+$ mkdir android/app/src/main/assets # (in project directory)
+$ react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+$ react-native run-android
+```
+
+
+Interesting links:
+* Reactr Developer RoadMap: `https://github.com/adam-golab/react-developer-roadmap`.
